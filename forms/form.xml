@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <field name="title" type="text" label="MOD_UK_SLIDER_FORM_TITLE" class="input-xxlarge" />
+    <field name="img_front" type="media" label="MOD_UK_SLIDER_FORM_ING_FRONT" class="input-xxlarge" />
+    <field name="content" type="textarea" label="MOD_UK_SLIDER_FORM_CONTENT" rows="3" filter="raw" class="span12" />
+    <field name="link" type="text" label="MOD_UK_SLIDER_FORM_LINK" default="" class="input-xxlarge" />
+    <field name="link_text" type="text" label="MOD_UK_SLIDER_FORM_LINK_TEXT" default="Read more" />
+</form>
