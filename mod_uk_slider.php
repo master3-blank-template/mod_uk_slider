@@ -22,7 +22,7 @@ if ($pause_on_hover) $sw_params[] = 'pause-on-hover:true';
 if ((int)$index > 0) $sw_params[] = 'index:' . (int)$index;
 if ((int)$center > 0) $sw_params[] = 'center:true';
 if ((int)$sets > 0) $sw_params[] = 'sets:true';
-if ($sw_params) $sw_params = '="' . implode(';', $sw_params) . '"';
+$sw_params = $sw_params ? '="' . implode(';', $sw_params) . '"' : '';
 
 $classes = [];
 if ($grid != '')
@@ -38,6 +38,6 @@ if ((int)$cols)
     $classes[] = $cols_l;
     $classes[] = $cols_xl;
 }
-if ($classes) $classes = ' ' . implode(' ', $classes);
+$classes = $classes ? ' ' . implode(' ', $classes) : '';
 
 require(JModuleHelper::getLayoutPath('mod_uk_slider', $params->get('layout', 'default')));
