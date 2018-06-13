@@ -1,14 +1,24 @@
 <?php defined('_JEXEC') or die;
+/*
+ * @package     mod_uk_slider
+ * @copyright   Copyright (C) 2018 Aleksey A. Morozov (AlekVolsk). All rights reserved.
+ * @license     GNU General Public License version 3 or later; see http://www.gnu.org/licenses/gpl-3.0.txt
+ */
 
 $vars = [
-    'moduleclass_sfx', 
-    'dotnav', 'slidenav', 
+    'slider_class', 'item_class', 'dotnav', 'slidenav', 
     'velocity', 'autoplay', 'autoplay_interval', 'finite', 'pause_on_hover', 'index', 'center', 'sets', 
     'grid', 'grid_divider', 'cols', 'cols_all', 'cols_s', 'cols_m', 'cols_l', 'cols_xl',
     'items'
 ];
+
 foreach ($vars as $var)
+{
     $$var = $params->get($var);
+}
+
+$slider_class = trim($slider_class) ? ' ' . trim($slider_class) : '';
+$item_class = trim($item_class);
 
 $sw_params = [];
 if ((int)$velocity > 1) $sw_params[] = 'velocity:' . (int)$velocity;
