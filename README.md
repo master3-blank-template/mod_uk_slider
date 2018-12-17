@@ -1,7 +1,5 @@
 # UIkit 3 Slider
 
-![Github Releases](https://img.shields.io/github/downloads/AlekVolsk/mod_uk_slider/latest/total.svg)
-
 ### EN:
 
 Slider of images, based on the UIkit 3 framework. Module for Joomla! 3
